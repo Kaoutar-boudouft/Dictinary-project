@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+#wrapper{
+    margin: auto;
+    border-radius: 7px;
+    background: rgba(149, 64, 219, 0.91);;
+    padding: 25px 28px 45px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+#wrapper header{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+  }
+  #wrapper .search{
+    position: relative;
+    margin: 35px 0 18px;
+  }
+  .search input{
+    height: 53px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0 42px;
+    border: 1px solid #999;
+  }
+  .search input:focus{
+    padding: 0 41px;
+    border: 2px solid #4D59FB;
+  }
+  .search input::placeholder{
+    color: #B8B8B8;
+  }
+  .search :where(i, span){
+    position: absolute;
+    top: 50%;
+    color: #999;
+    transform: translateY(-50%);
+  }
+  .search i{
+    left: 18px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+  .search input:focus ~ i{
+    color: #4D59FB;
+  }
+  .search span{
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+  }
+  .search input:valid ~ span{
+    display: block;
+  }
+  #wrapper .info-text{
+    font-size: 13px;
+    color: white;
+    margin: -3px 0 -10px;
+  }
+  #wrapper.active  .info-text {
+    display: none;
+  }
+
+  .info-text span{
+    font-weight: 500;
+  }
+  #rech{
+    background: #000000;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    margin: auto;
+  }
+  #rech:hover {
+    background: rgba(149, 64, 219, 0.91);
+  }
